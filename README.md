@@ -5,13 +5,18 @@
   <img src = "https://img.shields.io/github/issues-pr/ranveerchaudhary/Mercurial?style=for-the-badge">
 </div>
 
-# Cipher :rocket:
-<br>
+<div align = "center">
+  <img src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/ciphergif.gif">
+</div>
+<p>
+  
+</p>
 
 <br>
 
 # Contents
-<div>
+
+<div >
   <ul>
     <li>
     <h3><a href = "#basics">The Basics :page_facing_up:</a></h3>
