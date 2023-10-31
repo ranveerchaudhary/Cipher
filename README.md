@@ -6,11 +6,10 @@
 </div>
 
 <div align = "center">
-  <img src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/ciphergif.gif">
+  <img height = "320vh" src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/cipher-logo.png">
 </div>
-<p>
-  
-</p>
+
+<h3 align = "center" >Revolutionizing Password Security with Quantum Mechanics</h3>
 
 <br>
 
