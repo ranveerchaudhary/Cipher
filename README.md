@@ -36,21 +36,24 @@
       <h3><a href = "#btc">Behind the Curtain 🎭</a></h3>
       <ul>
       <li>
-        <h4><a href = "#algorithm">Algorithm :brain:</a></h4>
+        <h4><a href = "#generation">Generation Mechanics :mechanical_arm:</a></h4>
       </li>
       <li>
-        <h4><a href = "#engine">The Engine :mechanical_arm:</a></h4>
+        <h4><a href = "#engine">Neural Engine for Strength Analysis :brain:</a></h4>
       </li>
       <li>
-        <h4><a href = "#deployment">Deployment :eyes:</a></h4>
+        <h4><a href = "#vault">The Vault 👀</a></h4>
       </li>
     </ul>
     </li>
     <li>
-      <h3><a href = "#contributions">Contributions :anchor:</a></h3>
+      <h3><a href = "#contributions">End Note :anchor:</a></h3>
     </li>
     <li>
-      <h3><a href = "#contact">Contact :mailbox_with_mail:<a/></h3>
+      <h3><a href = "#contributions">Get Involved :anchor:</a></h3>
+    </li>
+    <li>
+      <h3><a href = "#contact">Reach Out :mailbox_with_mail:<a/></h3>
     </li>
   </ul>
 </div>
