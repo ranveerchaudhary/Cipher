@@ -64,7 +64,7 @@
 
 <h2 id = "introduction">Introduction 📄</h2>
 
-<h4 id = "#decipher">1. The Decipher *️⃣</h4>
+<h4 id = "decipher">1. The Decipher *️⃣</h4>
 <p>• <strong>Cipher</strong> is a cutting-edge password generator and vault, utilizing quantum mechanics to create truly random and robust passwords. Cipher also employs neural networks to analyze passwords and stores them with military-grade encryption for enhanced security.</p>
 
 <br>
