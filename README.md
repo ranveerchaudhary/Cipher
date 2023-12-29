@@ -6,7 +6,8 @@
 </div>
 
 <div align = "center">
-  <img height = "320vh" src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/cipher-logo.png">
+  <!--<img height = "320vh" src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/cipher-logo.png">-->
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=200&text=Cipher&fontSize=160&color=0:240e68,100:ccc1e7&stroke=ffffff&fontColor=ffffff"/>
 </div>
 
 <h3 align = "center" >Revolutionizing Password Security with Quantum Mechanics</h3>
