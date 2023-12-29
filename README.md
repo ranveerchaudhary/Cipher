@@ -71,8 +71,12 @@
 
 <h3 id = "history" >2. History :thought_balloon:</h3>
 <p>
-The project kicked off in 2019 as a fun way explore Python, driven by the motivation to tackle a prevalent issue many individuals were facing at the time. The widespread reliance on weak passwords, often a combination of easily guessable information such as pet names, birthdays, or nicknames, presented a glaring security vulnerability. Compounding the matter, users habitually employed these weak passwords across multiple services, as highlighted by the alarming statistics referenced in
-
+The project kicked off in 2019 as a fun way explore Python, driven by the motivation to tackle a prevalent issue many individuals were facing at the time. The widespread reliance on weak passwords, often a combination of easily guessable information such as pet names, birthdays, or nicknames, presented a glaring security vulnerability. Compounding the matter, users habitually employed these weak passwords across multiple services, as highlighted by the alarming statistics.
+<ul>
+  <li>Only 12% of people always use unique passwords. (<a href = "https://www.lastpass.com/resources/ebook/psychology-of-passwords-2022">LastPass</a>, 2022)</li>  
+  <li>1 out of 5 individuals admit including their birth year in their password. (<a href = "https://www.security.org/resources/online-password-strategies/">security.org</a>, 2023)</li>
+  <li>96% of the most common passwords can be cracked by hacking tools in less than one second. (<a href = "https://resources.digitalshadows.com/whitepapers-and-reports/account-takeover-in-2022">Digital Shadows</a>, 2022)</li>
+</ul>
 In response to these challenges, Cipher emerged as a solution. The initial iteration, developed exclusively in Python, featured a user interface implemented using the Tkinter library. Despite the UI exuding a nostalgic Windows 95 aesthetic, Cipher defied Tkinter's constraints, achieving a modern appearance with the added flair of a dark mode ;). The password generation mechanism relied on the random library, a Pseudo Random Number Generator (PRNG), offering a level of security that, although less robust than today's standards, was deemed acceptably secure.
 
 Version 2 marked a significant evolution, introducing password analysis capabilities through a set of conditional statements. The vault, a new addition in this version, leveraged the hashlib library to implement the SHA-256 bit hash (Secure Hashing Algorithm) and HMAC. Notably, salting was implemented to fortify the system against password-hash dictionaries. Subsequent versions featured minor updates, culminating in the current Version 7, which represents the pinnacle of Cipher's capabilities, offering the most refined and secure features to date.
