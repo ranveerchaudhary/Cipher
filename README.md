@@ -19,21 +19,21 @@
 <div >
   <ul>
     <li>
-    <h3><a href = "#basics">The Basics :page_facing_up:</a></h3>
+    <h3><a href = "#introduction">Introduction 📄</a></h3>
     <ul>
+      <li>
+        <h4><a href = "#decipher">The Decipher *️⃣</a></h4>
+      </li>
       <li>
         <h4><a href = "#history">History :thought_balloon:</a></h4>
       </li>
       <li>
-        <h4><a href = "#ui">The UI :iphone:</a></h4>
-      </li>
-      <li>
-        <h4><a href = "#recommendations">Recommendations :receipt:</a></h4>
+        <h4><a href = "#ui">The User Interface :iphone:</a></h4>
       </li>
     </ul>
     </li>
     <li>
-      <h3><a href = "#mechanism">The Mechanism :gear:</a></h3>
+      <h3><a href = "#btc">Behind the Curtain 🎭</a></h3>
       <ul>
       <li>
         <h4><a href = "#algorithm">Algorithm :brain:</a></h4>
