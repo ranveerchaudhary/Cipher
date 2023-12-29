@@ -71,7 +71,7 @@
 
 <h3 id = "history" >2. History :thought_balloon:</h3>
 <p>
-The project kicked off in 2019 as a fun way explore to Python, driven by the motivation to tackle a prevalent issue many individuals were facing at the time. The widespread reliance on weak passwords, often a combination of easily guessable information such as pet names, birthdays, or nicknames, presented a glaring security vulnerability. Compounding the matter, users habitually employed these weak passwords across multiple services, as highlighted by the alarming statistics.
+The project kicked off in 2019 as a fun way to explore Python, driven by the motivation to tackle a prevalent issue many individuals were facing at the time. The widespread reliance on weak passwords, often a combination of easily guessable information such as pet names, birthdays, or nicknames, presented a glaring security vulnerability. Compounding the matter, users habitually employed these weak passwords across multiple services, as highlighted by the alarming statistics.
 <ul>
   <li>Only 12% of people always use unique passwords. (<a href = "https://www.lastpass.com/resources/ebook/psychology-of-passwords-2022">LastPass</a>, 2022)</li>  
   <li>1 out of 5 individuals admit including their birth year in their password. (<a href = "https://www.security.org/resources/online-password-strategies/">security.org</a>, 2023)</li>
