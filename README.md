@@ -88,3 +88,12 @@ Version 2 marked a significant evolution, introducing password analysis capabili
   <img src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/cipherv7.png">
   <figcaption>Cipher Version - 7</figcaption>
 </div>
+
+<br>
+
+<h3 id = "ui" >3. The User Interface :iphone:</h3>
+<p>
+As previously mentioned, the initial versions of Cipher were constructed atop the Tkinter library, which did not meet modern UI/UX standards. However, the most recent Version 7 has undergone a transformation, adopting the neomorphism design style and harnessing the Pupertino framework to achieve crisp graphics. To introduce fluid and dynamic animations, we've incorporated the Anime.js framework, orchestrating intricate movements that enhance the overall user experience.
+
+Version 7 represents a substantial leap forward, surpassing its predecessors not only in terms of features but also in the realm of UI design. The layout has been meticulously architected, adhering to user experience guidelines to ensure seamless navigation. Both the vault and the save password sections have undergone a comprehensive revamp, aligning with the upgraded design principles to provide users with a visually appealing and user-friendly interface.
+</p>
