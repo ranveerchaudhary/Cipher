@@ -145,7 +145,14 @@ Curating the dataset posed a unique challenge during the scraping process, as pa
 
 >Even if you don't use a cipher, always include a comma in your password. It will break the CSV format if your password ever gets leaked.
 
-The processed data was then input into a meticulously designed neural network implemented using Keras. The resulting model underwent extensive training over hundreds of epochs, with hyperparameters finely tuned to capture the intricate non-linear patterns associated with password strength.</p>
+The processed data was then input into a meticulously designed neural network implemented using Keras. The model underwent extensive training over hundreds of epochs, with hyperparameters finely tuned to capture the intricate non-linear patterns associated with password strength. The result? A cutting-edge password analysis system that precisely evaluates the robustness of the generated password, and if Cipher says it's strong, then it's really strong — even by military standards.
+
+<div>
+  <img>
+  <img>
+</div>
+
+</p>
 
 ##
 
