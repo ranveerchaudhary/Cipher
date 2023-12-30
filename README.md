@@ -92,8 +92,20 @@ Version 2 marked a significant evolution, introducing password analysis capabili
 <br>
 
 <h3 id = "ui" >3. The User Interface :iphone:</h3>
-<p>
-As previously mentioned, the initial versions of Cipher were constructed atop the Tkinter library, which did not meet modern UI/UX standards. However, the most recent Version 7 has undergone a transformation, adopting the neomorphism design style and harnessing the Pupertino framework to achieve crisp graphics. To introduce fluid and dynamic animations, we've incorporated the Anime.js framework, orchestrating intricate movements that enhance the overall user experience.
 
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+<p>
+As previously mentioned, the initial versions of Cipher were constructed atop the Tkinter library, which did not meet modern UI/UX standards. However, the most recent Version 7 has undergone a transformation, adopting the neomorphism design style and harnessing the Puppertino framework to achieve crisp graphics. To introduce fluid and dynamic animations, we've incorporated the Anime.js framework, orchestrating intricate movements that enhance the overall user experience.
+
+<ul>
+  <li> <a href = "https://github.com/codedgar/Puppertino">Puppertino</a> </li>
+  <li> <a href = "https://animejs.com/">Anime.js</a> </li>
+</ul>
+    
 Version 7 represents a substantial leap forward, surpassing its predecessors not only in terms of features but also in the realm of UI design. The layout has been meticulously architected, adhering to user experience guidelines to ensure seamless navigation. Both the vault and the save password sections have undergone a comprehensive revamp, aligning with the upgraded design principles to provide users with a visually appealing and user-friendly interface.
 </p>
