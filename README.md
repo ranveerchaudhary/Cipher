@@ -109,3 +109,43 @@ As previously mentioned, the initial versions of Cipher were constructed atop th
     
 Version 7 represents a substantial leap forward, surpassing its predecessors not only in terms of features but also in the realm of UI design. The layout has been meticulously architected, adhering to user experience guidelines to ensure seamless navigation. Both the vault and the save password sections have undergone a comprehensive revamp, aligning with the upgraded design principles to provide users with a visually appealing and user-friendly interface.
 </p>
+
+
+##
+
+<br>
+
+<h2 id = "btc">Behind the Curtain 🎭</h2>
+
+<h3 id = "generation">1. Generation Mechanics :mechanical_arm:</h3>
+
+<p></p>
+
+##
+
+<br>
+
+<h2 id = "contributions">Get Involved ⚓</h2>
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+##
+
+<br>
+
+<h2 id = "contact">Reach Out 📬</h2>
+
+Email: ranveerchaudhary1000@gmail.com
+
+Portfolio Website: [https://ranveerchaudhary.github.io](https://ranveerchaudhary.github.io)
+
+Linkedin Profile: [https://www.linkedin.com/in/ranveerchaudhary1](https://www.linkedin.com/in/ranveerchaudhary1)
