@@ -119,7 +119,19 @@ Version 7 represents a substantial leap forward, surpassing its predecessors not
 
 <h3 id = "generation">1. Generation Mechanics :mechanical_arm:</h3>
 
-<p></p>
+<p>
+The initial versions of Cipher relied on the <a href = "https://docs.python.org/3/library/random.html">random</a> library, which utilizes a Pseudo Random Number Generator (PRNG), specifically employing the Mersenne Twister algorithm. However, it's crucial to highlight that theoretically, the seemingly random numbers it generates can be predicted, posing a substantial security flaw, particularly in the realm of cybersecurity. Even the official documentation explicitly advises against using such methods in cryptography and other secure applications. 
+
+>Warning The pseudo-random generators of this module should not be used for security purposes. For security or cryptographic uses, see the secrets module.
+
+While an alternative like the '<a href = "https://docs.python.org/3/library/secrets.html">secrets</a>' module, a Cryptographically Secure Random Number Generator (CSRNG), exists, we have embraced an even more advanced solution. Fortunately, the brilliant minds at the Australian National University (ANU) leverage quantum mechanics to measure the quantum fluctuations of the vacuum, resulting in a <a href = "https://qrng.anu.edu.au/">QRNG</a> (Quantum Random Number Generation), accessible through an API.
+
+The intricacies of how QRNG operates are beyond the scope of this project, but in essence, it introduces an unparalleled level of randomness and security; Just to give some context about its potency,
+
+>"even if two identical generators were placed in identical environments with identical initial conditions, the streams of numbers generated would remain entirely uncorrelated."
+
+Cipher harnesses this cutting-edge technology to generate truly random and robust passwords. The generation mechanics handle all the heavy lifting, ensuring the creation of resilient passwords that defy predictability.
+</p>
 
 ##
 
