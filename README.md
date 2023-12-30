@@ -81,7 +81,7 @@ In response to these challenges, Cipher emerged as a solution. The initial itera
 
 ###
 
-Version 2 marked a significant evolution, introducing password analysis capabilities through a set of conditional statements. The vault, a new addition in this version, leveraged the hashlib library to implement the SHA-256 bit hash (Secure Hashing Algorithm) and HMAC. Notably, salting was implemented to fortify the system against password-hash dictionaries. Subsequent versions featured minor updates, culminating in the current Version 7, which represents the pinnacle of Cipher's capabilities, offering the most refined and secure features to date.
+Version 2 marked a significant evolution, introducing password analysis capabilities through a set of conditional statements. The vault, a new addition in this version, leveraged the hashlib library to implement the SHA-256 bit hash (Secure Hashing Algorithm) [<sup>1</sup>](https://en.wikipedia.org/wiki/Secure_Hash_Algorithms) and HMAC [<sup>2</sup>](https://en.wikipedia.org/wiki/HMAC). Notably, salting was implemented to fortify the system against password-hash dictionaries. Subsequent versions featured minor updates, culminating in the current Version 7, which represents the pinnacle of Cipher's capabilities, offering the most refined and secure features to date.
 </p>
 
 <div align = "center" style = "display:flex; flex-direction:row;">
