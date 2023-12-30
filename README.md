@@ -39,7 +39,7 @@
         <h4><a href = "#generation">Generation Mechanics :mechanical_arm:</a></h4>
       </li>
       <li>
-        <h4><a href = "#engine">Neural Engine for Strength Analysis :brain:</a></h4>
+        <h4><a href = "#engine">Neural Engine :brain:</a></h4>
       </li>
       <li>
         <h4><a href = "#vault">The Vault 👀</a></h4>
@@ -126,12 +126,26 @@ The initial versions of Cipher relied on the <a href = "https://docs.python.org/
 
 While an alternative like the '<a href = "https://docs.python.org/3/library/secrets.html">secrets</a>' module, a Cryptographically Secure Random Number Generator (CSRNG), exists, we have embraced an even more advanced solution. Fortunately, the brilliant minds at the Australian National University (ANU) leverage quantum mechanics to measure the quantum fluctuations of the vacuum, resulting in a <a href = "https://qrng.anu.edu.au/">QRNG</a> (Quantum Random Number Generation), accessible through an API.
 
-The intricacies of how QRNG operates are beyond the scope of this project, but in essence, it introduces an unparalleled level of randomness and security; Just to give some context about its potency,
+The intricacies of how QRNG operates are beyond the scope of this project, but in essence, it introduces an unparalleled level of randomness and security. Just to give some context about its potency,
 
 >Even if two identical generators were placed in identical environments with identical initial conditions, the streams of numbers generated would remain entirely uncorrelated.
 
 Cipher harnesses this cutting-edge technology to generate truly random and robust passwords. The generation mechanics handle all the heavy lifting, ensuring the creation of resilient passwords that defy predictability.
 </p>
+
+<br>
+
+<h3 id = "engine">2. Neural Engine :brain:</h3>
+
+<p>The capabilities of neural networks have been harnessed to analyze password strength within Cipher. While earlier versions included this feature, they relied on simple if-else statements to categorize passwords based on their strength. Although seemingly functional, this approach can, in many cases, misrepresent password strength, introducing a potential security flaw.
+
+To address this limitation, a neural network has been integrated into Cipher's latest version. The neural network is trained on a custom dataset curated by Ranveer, categorized into three labels: weak, medium, and strong. The dataset encompasses passwords from various sources, including infamous leaked <a href = "https://en.wikipedia.org/wiki/RockYou#Data_breach" >RockYou passwords</a> and other leaked passwords found on the internet, these passwords were then scraped using <a href = "https://www.crummy.com/software/BeautifulSoup/" >BeautifulSoup</a>. Additionally, passwords generated using Cipher and the QRNG were included.
+
+Curating the dataset posed a unique challenge during the scraping process, as passwords, when used in the generation process, could contain commas. To mitigate potential issues with CSV (Comma-Separated Values), we transitioned to TSV (Tab-Separated Values) by switching the delimiter. This ensured that passwords with commas were preserved without disrupting the dataset.
+
+>Even if you don't use a cipher, always include a comma in your password. It will break the CSV format if your password ever gets leaked.
+
+The processed data was then input into a meticulously designed neural network implemented using Keras. The resulting model underwent extensive training over hundreds of epochs, with hyperparameters finely tuned to capture the intricate non-linear patterns associated with password strength.</p>
 
 ##
 
