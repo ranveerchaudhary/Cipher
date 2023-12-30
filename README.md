@@ -147,10 +147,12 @@ Curating the dataset posed a unique challenge during the scraping process, as pa
 
 The processed data was then input into a meticulously designed neural network implemented using Keras. The model underwent extensive training over hundreds of epochs, with hyperparameters finely tuned to capture the intricate non-linear patterns associated with password strength. The result? A cutting-edge password analysis system that precisely evaluates the robustness of the generated password, and if Cipher says it's strong, then it's really strong — even by military standards.
 
-<div>
-  <img>
-  <img>
+<div align = "center">
+  <img src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/weakpasscipher.png">
+  <img src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/weakpasswebsite.png">
+  <figcaption>Comparing a weak password between cipher & <a href = "https://www.passwordmonster.com/">Password Monster</a></figcaption>
 </div>
+
 
 </p>
 
