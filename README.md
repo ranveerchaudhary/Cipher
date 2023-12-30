@@ -186,9 +186,10 @@ Don't forget to give the project a star! Thanks again!
 <br>
 
 <h2 id = "contact">Reach Out 📬</h2>
+<ul>
+<li>Email: ranveerchaudhary1000@gmail.com</li>
 
-Email: ranveerchaudhary1000@gmail.com
+<li>Portfolio Website: https://ranveerchaudhary.github.io</li>
 
-Portfolio Website: [https://ranveerchaudhary.github.io](https://ranveerchaudhary.github.io)
-
-Linkedin Profile: [https://www.linkedin.com/in/ranveerchaudhary1](https://www.linkedin.com/in/ranveerchaudhary1)
+<li>Linkedin Profile: https://www.linkedin.com/in/ranveerchaudhary1</li>
+</ul>
