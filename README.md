@@ -119,6 +119,9 @@ Version 7 represents a substantial leap forward, surpassing its predecessors not
 
 <h3 id = "generation">1. Generation Mechanics :mechanical_arm:</h3>
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+
 <p>
 The initial versions of Cipher relied on the <a href = "https://docs.python.org/3/library/random.html">random</a> library, which utilizes a Pseudo Random Number Generator (PRNG), specifically employing the Mersenne Twister algorithm. However, it's crucial to highlight that theoretically, the seemingly random numbers it generates can be predicted, posing a substantial security flaw, particularly in the realm of cybersecurity. Even the official documentation explicitly advises against using such methods in cryptography and other secure applications. 
 
@@ -137,6 +140,10 @@ Cipher harnesses this cutting-edge technology to generate truly random and robus
 
 <h3 id = "engine">2. Neural Engine :brain:</h3>
 
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+
 <p>The capabilities of neural networks have been harnessed to analyze password strength within Cipher. While earlier versions included this feature, they relied on simple if-else statements to categorize passwords based on their strength. Although seemingly functional, this approach can, in many cases, misrepresent password strength, introducing a potential security flaw.
 
 To address this limitation, a neural network has been integrated into Cipher's latest version. The neural network is trained on a custom dataset curated by Ranveer, categorized into three labels: weak, medium, and strong. The dataset encompasses passwords from various sources, including infamous leaked <a href = "https://en.wikipedia.org/wiki/RockYou#Data_breach" >RockYou passwords</a> and other leaked passwords found on the internet, these passwords were then scraped using <a href = "https://www.crummy.com/software/BeautifulSoup/" >BeautifulSoup</a>. Additionally, passwords generated using Cipher and the QRNG were included.
@@ -145,7 +152,7 @@ Curating the dataset posed a unique challenge during the scraping process, as pa
 
 >Even if you don't use a cipher, always include a comma in your password. It will break the CSV format if your password ever gets leaked.
 
-The processed data was then input into a meticulously designed neural network implemented using Keras. The model underwent extensive training over hundreds of epochs, with hyperparameters finely tuned to capture the intricate non-linear patterns associated with password strength. The result? A cutting-edge password analysis system that precisely evaluates the robustness of the generated password, and if Cipher says it's strong, then it's really strong — even by military standards.
+The processed data was then input into a meticulously designed neural network implemented using Keras. The model underwent extensive training over hundreds of epochs, with hyperparameters finely tuned to capture the intricate non-linear patterns associated with password strength. The result? A cutting-edge password analysis system that precisely evaluates the robustness of the generated password, and if Cipher says it's strong, then it's really strong — even by military standards.</p>
 
 <div align = "center">
   <img src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/weakpasscipher.png">
@@ -153,8 +160,9 @@ The processed data was then input into a meticulously designed neural network im
   <figcaption>Comparing a weak password between cipher & <a href = "https://www.passwordmonster.com/">Password Monster</a></figcaption>
 </div>
 
+<br>
 
-</p>
+<h3 id = "vault">3. The Vault 👀</h3>
 
 ##
 
