@@ -5,7 +5,7 @@
   <img src = "https://img.shields.io/github/issues-pr/ranveerchaudhary/Mercurial?style=for-the-badge">
 </div>
 
-<div align = "center">
+<divC>
   <br>
   <img src="https://capsule-render.vercel.app/api?type=venom&height=210&text=Cipher&fontSize=160&color=0:240e68,100:ccc1e7&stroke=ffffff&fontColor=ffffff"/>
 </div>
@@ -77,7 +77,14 @@ The project kicked off in 2019 as a fun way to explore Python, driven by the mot
   <li>1 out of 5 individuals admit including their birth year in their password. (<a href = "https://www.security.org/resources/online-password-strategies/">security.org</a>, 2023)</li>
   <li>96% of the most common passwords can be cracked by hacking tools in less than one second. (<a href = "https://resources.digitalshadows.com/whitepapers-and-reports/account-takeover-in-2022">Digital Shadows</a>, 2022)</li>
 </ul>
-In response to these challenges, Cipher emerged as a solution. The initial iteration, developed exclusively in Python, featured a user interface implemented using the Tkinter library. Despite the UI exuding a nostalgic Windows 95 aesthetic, Cipher defied Tkinter's constraints, achieving a modern appearance with the added flair of a dark mode ;). The password generation mechanism relied on the random library, a Pseudo Random Number Generator (PRNG), offering a level of security that, although less robust than today's standards, was deemed acceptably secure.
+In response to these challenges, Cipher emerged as a solution. The initial iteration, developed exclusively in Python, featured a user interface implemented using the Tkinter library. Despite the UI exuding a nostalgic Windows 95 aesthetic, Cipher defied Tkinter's constraints, achieving a modern appearance with the added flair of a dark mode ;). The password generation mechanism relied on the random library, a Pseudo Random Number Generator (PRNG), offering a level of security that, although less robust than today's standards, was acceptably secure.
+
+###
 
 Version 2 marked a significant evolution, introducing password analysis capabilities through a set of conditional statements. The vault, a new addition in this version, leveraged the hashlib library to implement the SHA-256 bit hash (Secure Hashing Algorithm) and HMAC. Notably, salting was implemented to fortify the system against password-hash dictionaries. Subsequent versions featured minor updates, culminating in the current Version 7, which represents the pinnacle of Cipher's capabilities, offering the most refined and secure features to date.
 </p>
+
+<div align = "center" style = "display:flex; flex-direction:row;">
+  <img src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/cipherv7.png">
+  <figcaption>Cipher Version - 7</figcaption>
+</div>
