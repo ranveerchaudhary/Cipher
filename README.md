@@ -133,7 +133,10 @@ The intricacies of how QRNG operates are beyond the scope of this project, but i
 
 >Even if two identical generators were placed in identical environments with identical initial conditions, the streams of numbers generated would remain entirely uncorrelated.
 
-Cipher harnesses this cutting-edge technology to generate truly random and robust passwords. The generation mechanics handle all the heavy lifting, ensuring the creation of resilient passwords that defy predictability.
+Cipher harnesses this cutting-edge technology to generate truly random and robust passwords, offering users the flexibility to choose the type of password they desire. The options include **alphanumeric**, **special characters**, and **readable**. The alphanumeric option keeps things simple by including only numbers and alphabets. Passwords can be strengthened by incorporating special characters, which only works in conjunction with the alphanumeric-only option, adding special characters to the mix.
+
+There **was** also a third option called readable, which initially generated easily understandable passwords. However, after rigorous testing revealed a pattern of producing weak passwords, we disabled this option in the latest build. Users can select the password length using the slider, ranging from 8 to 100 characters. While a length of around 30 characters would be considered highly secure, The generation mechanics handle all the heavy lifting, ensuring the creation of resilient passwords that defy predictability.
+
 </p>
 
 <br>
