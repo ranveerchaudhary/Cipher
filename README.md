@@ -136,12 +136,9 @@ The intricacies of how QRNG operates are beyond the scope of this project, but i
 Cipher harnesses this cutting-edge technology to generate truly random and robust passwords, offering users the flexibility to choose the type of password they desire. The options include **alphanumeric**, **special characters**, and **readable**. The alphanumeric option keeps things simple by including only numbers and alphabets. Passwords can be strengthened by incorporating special characters, which only works in conjunction with the alphanumeric-only option, adding special characters to the mix.
 
 There **was** also a third option called readable, which initially generated easily understandable passwords. However, after rigorous testing revealed a pattern of producing weak passwords, we disabled this option in the latest build. Users can select the password length using the slider, ranging from 8 to 100 characters. While a length of around 30 characters would be considered highly secure, The generation mechanics handle all the heavy lifting, ensuring the creation of resilient passwords that defy predictability.
-
-<video width="1920" height="1080" autoplay loop muted>
-    <source src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/cipherpassgen.mp4" type="video/mp4">
-</video>
-
 </p>
+
+https://github.com/ranveerchaudhary/Cipher/assets/64607338/7b5decc3-0e86-46cb-99e5-04bb2f3ac6ab
 
 <br>
 
