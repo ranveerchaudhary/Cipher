@@ -178,6 +178,18 @@ Every version of Cipher featured a vault, allowing users to save and view passwo
 
 <br>
 
+<h2 id = "endnode">The End Note 🔚</h2>
+
+<p>
+Well, that's a wrap – that's all there is to know about Cipher. There are plenty of cool features that could be added in future versions, but, Ehh, I hate to break it to you; there won't be any future versions :,( There's a laundry list of improvements to be made, such as making Cipher responsive for different devices, adding a secure database, and implementing autofill credentials on various platforms, among other things. If you're as enthusiastic about Cipher or any tech that makes the world a better place as I am and want to contribute, you can find instructions in the <a href = "#contributions">contributions</a> section on how to add a stellar feature.
+
+Reaching the current version took a considerable amount of time, perfecting every imperfection. While Cipher may have room for improvement, it is complete and stands as depicted. We've made efforts to future-proof Cipher, but inevitably, at some point, it might become ancient tech. However, my hope is that people will use it and appreciate it for what it is now. I understand Cipher might be overkill for Grandma's Facebook password, but sometimes, overengineering is the secret sauce behind great projects.
+</p>
+
+##
+
+<br>
+
 <h2 id = "contributions">Get Involved ⚓</h2>
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
