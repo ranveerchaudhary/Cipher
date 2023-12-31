@@ -170,8 +170,9 @@ The processed data was then input into a meticulously designed neural network im
 
 >The vault eliminates the hassle of remembering different passwords used across various services, thereby addressing the final problem mentioned above.
 
-Every version of Cipher features a vault, allowing users to save and view passwords. However, due to Cipher version 7 being deployed on a browser, a proper encrypted database is not feasible. Instead, a file system is employed to store encrypted passwords along with their corresponding platforms. These files are secured with a key (master pin). If users wish to view the passwords again, they can upload the .cipher file and use the key (master pin) that was used to encrypt the file.
-<p></p>
+<p>
+Every version of Cipher featured a vault, allowing users to save and view passwords. However, due to Cipher version 7 being deployed on a browser, a proper encrypted database is not feasible. Instead, a file system is employed to store encrypted passwords along with their corresponding platforms. These files are secured with a key (Master PIN). If users wish to view the passwords again, they can upload the .cipher file and use the key (Master PIN) that was used to encrypt the file. Users can create a new .cipher file for each new password, or they can append new passwords to already existing .cipher files (Please ensure to use the same Master PIN when appending new passwords to avoid any potential bugs).
+</p>
 
 ##
 
