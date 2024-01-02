@@ -71,7 +71,9 @@
 
 <h3 id = "history" >2. History :thought_balloon:</h3>
 <p>
-The project kicked off in 2019 as a fun way to explore Python, driven by the motivation to tackle a prevalent issue many individuals were facing at the time. The widespread reliance on weak passwords, often a combination of easily guessable information such as pet names, birthdays, or nicknames, presented a glaring security vulnerability. Compounding the matter, users habitually employed these weak passwords across multiple services, as highlighted by the alarming statistics.
+The project kicked off in 2019 as a fun way to explore Python, driven by the motivation to tackle a prevalent issue many individuals were facing at the time. 
+
+The widespread reliance on weak passwords, often a combination of easily guessable information such as pet names, birthdays, or nicknames, presented a glaring security vulnerability. Compounding the matter, users habitually employed these weak passwords across multiple services, as highlighted by the alarming statistics.
 <ul>
   <li>Only 12% of people always use unique passwords. (<a href = "https://www.lastpass.com/resources/ebook/psychology-of-passwords-2022">LastPass</a>, 2022)</li>  
   <li>1 out of 5 individuals admit including their birth year in their password. (<a href = "https://www.security.org/resources/online-password-strategies/">security.org</a>, 2023)</li>
@@ -133,9 +135,13 @@ The intricacies of how QRNG operates are beyond the scope of this project, but i
 
 >Even if two identical generators were placed in identical environments with identical initial conditions, the streams of numbers generated would remain entirely uncorrelated.
 
-Cipher harnesses this cutting-edge technology to generate truly random and robust passwords. While the API offers a free tier, it is restricted to 100 requests per month, as per our last check. You can sign up for the API and get the secret key <a href = "https://quantumnumbers.anu.edu.au/">here</a>. Users has the flexibility to choose the type of password they desire. The options include **alphanumeric**, **special characters**, and **r̶e̶a̶d̶a̶b̶l̶e̶**. The alphanumeric option keeps things simple by including only numbers and alphabets. Passwords can be strengthened by incorporating special characters, which only works in conjunction with the alphanumeric-only option, adding special characters to the mix.
+Cipher harnesses this cutting-edge technology to generate truly random and robust passwords. While the API offers a free tier, it is restricted to 100 requests per month, as per our last check. You can sign up for the API and get the secret key <a href = "https://quantumnumbers.anu.edu.au/">here</a>. Users has the flexibility to choose the type of password they desire. The options include **alphanumeric**, **special characters**, and **r̶e̶a̶d̶a̶b̶l̶e̶**.
 
-There **was** also a third option called readable, which initially generated easily understandable passwords. However, after rigorous testing revealed a pattern of producing weak passwords, we disabled this option in the latest build. Users can select the password length using the slider, ranging from 8 to 100 characters. Even though a length of around 30 characters would be considered highly secure we've generously added extra space for the cybersecurity enthusiasts. The generation mechanics handle all the heavy lifting, ensuring the creation of resilient passwords that defy predictability.
+The alphanumeric option keeps things simple by including only numbers and alphabets. Passwords can be strengthened by incorporating special characters, which only works in conjunction with the alphanumeric-only option, adding special characters to the mix.
+
+There **was** also a third option called readable, which initially generated easily understandable passwords. However, after rigorous testing revealed a pattern of producing weak passwords, we disabled this option in the latest build.
+
+Users can select the password length using the slider, ranging from 8 to 100 characters. Even though a length of around 30 characters would be considered highly secure we've generously added extra space for the cybersecurity enthusiasts. The generation mechanics handle all the heavy lifting, ensuring the creation of resilient passwords that defy predictability.
 </p>
 
 https://github.com/ranveerchaudhary/Cipher/assets/64607338/7b5decc3-0e86-46cb-99e5-04bb2f3ac6ab
