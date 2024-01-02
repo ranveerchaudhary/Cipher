@@ -1,0 +1,893 @@
+@font-face {
+    font-family: rbr;
+    src: url("./roboto.ttf");
+}
+
+@media only screen and (max-width: 949px){
+
+    #incompatible{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+    }
+
+    #incompatible h4{
+        font-family: rbr;
+        font-size: 3.5dvw;
+        font-weight: 400;
+        color: white;
+    }
+
+    #main{
+        display: none;
+    }
+
+    body{
+        overflow: hidden;
+        height: 100dvh;
+        width: 100dvw;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        user-select: none;
+    }
+
+}
+
+@media only screen and (min-width: 950px) and (max-height: 1440px){
+
+    body{
+        overflow: hidden;
+        height: 100dvh;
+        width: 100dvw;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        user-select: none;
+    }
+
+    
+    #incompatible{
+        display: none;
+    }
+
+
+    #main{
+        height: 100dvh;
+        width: 100dvw;
+    }
+
+    #bgimage{
+        width: 100dvw;
+        height: 100dvh;
+        object-fit: cover;
+    }
+
+    #nav{
+        position: absolute;
+        top: 0dvh;
+        left: 0dvw;
+        width: 100dvw;
+        height: 20dvh;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    #navdiv{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 28dvw;
+        margin-left: -1dvw;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #cipher{
+        font-family: rbr;
+        color: white;
+        cursor: pointer;
+        font-size: 3.45dvh; 
+    }
+
+    #info{
+        font-family: rbr;
+        color: white;
+        font-weight: 300;
+        cursor: pointer;
+        font-size: 3.45dvh; 
+    }
+
+    #contact{
+        font-family: rbr;
+        color: white;
+        font-weight: 300;
+        cursor: pointer;
+        font-size: 3.45dvh; 
+    }
+
+    #base{
+        position: absolute;
+        top: 10dvh;
+        left: 0dvw;
+        width: 100dvw;
+        height: 80dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #basediv{
+        background-color: rgb(39, 39, 39);
+        height: 65dvh;
+        width: 65dvw;
+        border-radius: 1dvw;
+        box-shadow: 0dvw 5dvh 10dvh rgba(30, 30, 30, 0.658);
+    }
+
+    #sec1{
+        height: 15dvh;
+        width: 65dvw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #lengthbar{
+        width: 60dvw;
+        margin-top: 7dvh;
+    }
+
+    #label{
+        width: 60dvw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #length{
+        margin-top: 0dvh;
+        font-family: rbr;
+        font-size: 1.75dvw;
+        font-weight: 300;
+        color: white;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    #sec2{
+        height: 50dvh;
+        width: 65dvw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: -2.5dvh;
+    }
+
+    #passgen{
+        background-color: rgb(252, 252, 252);
+        height: 45dvh;
+        width: 20dvw;
+        border-radius: 1dvw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 10px 20px rgba(31, 31, 31, 0.609);
+    }
+
+    #copybar{
+        width: 18dvw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: -2dvh;
+    }
+
+    #copy{
+        width: 1.5dvw;
+        height: auto;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+
+    #passbar{
+        width: 18dvw;
+        height: 32dvh;
+        word-wrap: break-word;
+    }
+
+    #password{
+        font-size: 2.5dvh;
+        font-family: rbr;
+        font-weight: 350;
+    }
+
+    #strengthbar{
+        width: 18dvw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #strength{
+        color: #008000;
+        font-family: rbr;
+        font-size: 1.4dvw;
+        font-weight: 400;
+        margin-bottom: -2dvh;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    #controlsdiv{
+        height: 45dvh;
+        width: 35dvw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    #csec1{
+
+        height: 22dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .linea{
+        height: 0.25dvh;
+        width: 18dvw;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    #alpha{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 30dvw;
+    }
+
+    #schar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 30dvw;
+    }
+
+    #read{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 30dvw;
+        cursor: not-allowed;
+    }
+
+    #ln1{
+        background-color: #008000;
+    }
+
+    #ln2{
+        background-color: #ffffff;
+    }
+
+    #ln3{
+        background-color: #7e7e7e;
+        cursor: not-allowed;
+    }
+
+    .opl{
+        font-family: rbr;
+        font-size: 2.45dvh;  
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    #oal{
+        color:#008000;
+    }
+
+    #osc{
+        color: white;
+    }
+
+    #ord{
+        color: #7e7e7e;
+        cursor: not-allowed;
+    }
+
+    #csec2{
+
+        height: 15dvh;
+        width: 30dvw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #loader1{
+        height: 5dvh;
+        width: 0dvw;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #4e27dc);
+        opacity: 1;
+    }
+
+    #generate{
+        background-color: rgba(252, 252, 252, 0);
+        height: 5dvh;
+        width: 30dvw;
+        border-color: white;
+        border-width: 0.25dvh;
+        border-style: solid;
+        font-family: rbr;
+        font-size: 1.2dvw;
+        font-weight: 400;
+        color: #ffffff;
+        position: relative;
+        bottom: 5dvh;
+        cursor: pointer;
+    }
+
+    #subcont{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 30dvw;
+    }
+
+
+    #save{
+        background-color: rgba(252, 252, 252, 0);
+        height: 5dvh;
+        width: 14dvw !important;
+        border-color: white;
+        border-width: 0.25dvh;
+        border-style: solid;
+        font-family: rbr;
+        font-size: 1.2dvw;
+        font-weight: 400;
+        color: white;
+        cursor: pointer;
+    }
+
+    #vault{
+        background-color: rgba(252, 252, 252, 0);
+        height: 5dvh;
+        width: 14dvw !important;
+        border-color: white;
+        border-width: 0.25dvh;
+        border-style: solid;
+        font-family: rbr;
+        font-size: 1.3dvw;
+        font-weight: 400;
+        color: white;
+        cursor: pointer;
+    }
+
+    #save:hover, #vault:hover{
+        background-color: #ffffff1d;
+    }
+
+    #savesec{
+        position: absolute;
+        top: 17.5dvh;
+        left: 17.5dvw;
+        background-color: rgb(39, 39, 39);
+        height: 65dvh;
+        width: 65dvw;
+        border-radius: 1dvw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #savehead{
+        font-family: rbr;
+        font-size: 1.75dvw;
+        font-weight: 600;
+        color: white;
+        margin: none;
+        margin-left: 2dvw;
+    }
+
+    #passit{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 50dvw;
+        height: 5dvh;
+        margin-left: 4dvh;
+        margin-top: 3dvh;
+        margin-bottom: 4dvh;
+    }
+
+    .ln1{
+        height: 0.3dvh;
+        width: 61dvw;
+        background-color: #ffffff;
+        margin-left: 2dvw;
+    }
+
+    #platform{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 50dvw;
+        height: 5dvh;
+        margin-left: 4dvh;
+        margin-top: 3dvh;
+    }
+
+    #plat1{
+        font-family: rbr;
+        font-size: 1.5dvw;
+        font-weight: 400;
+        color: white;
+        margin-right: 2.9dvw;
+    }
+
+    #plat2{
+        outline: none;
+        font-family: rbr;
+        font-size: 1.25dvw;
+        font-weight: 250;
+        width: 40dvw;
+        background-color: white;
+        color: black;
+        padding-left: 1dvw;
+        border: none;
+        margin-left: 1dvw;
+    }
+
+    #passit6{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 50dvw;
+        height: 5dvh;
+        margin-left: 4dvh;
+        margin-top: 3dvh;
+        margin-bottom: 4dvh;
+    }
+
+    #pass1{
+        font-family: rbr;
+        font-size: 1.5dvw;
+        font-weight: 400;
+        color: white;
+        margin-right: 3dvw;
+    }
+
+    #pass2{
+        outline: none;
+        font-family: rbr;
+        font-size: 1.25dvw;
+        font-weight: 250;
+        width: 40dvw;
+        background-color: white;
+        color: black;
+        padding-left: 1dvw;
+        border: none;
+    }
+
+    #pin{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 61dvw;
+        height: 5dvh;
+        margin-left: 2dvw;
+        margin-top: 3dvh;
+        margin-bottom: 4dvh;
+    }
+
+    #pin1{
+        font-family: rbr;
+        font-size: 1.5dvw;
+        font-weight: 400;
+        color: white;
+        width: 15dvw;
+    }
+
+    #pin2{
+        outline: none;
+        font-family: rbr;
+        font-size: 1.25dvw;
+        font-weight: 250;
+        width: 40dvw;
+        background-color: white;
+        color: black;
+        padding-left: 1dvw;
+        padding-right: 1dvw;
+        margin-left: 0.5dvw;
+        border: none;
+    }
+
+    #pin3{
+        font-family: rbr;
+        font-size: 1.25dvw;
+        font-weight: 200;
+        color: rgb(225, 255, 0);
+        margin-left: 3dvw;
+    }
+
+    #file{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 25dvw;
+        height: 10dvh;
+        background-color: rgba(255, 255, 255, 0.252);
+        margin-left: 2dvw;
+    }
+
+    #file1{
+        display:none;
+    }
+
+    #pfile{
+        font-family: rbr;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        background-color: #aeaeae;
+        cursor: pointer;
+        width: 7.75dvw;
+        height: 3.5dvh;
+        border: none;
+    }
+
+    #file2{
+
+        font-family: rbr;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        background-color: #aeaeae;
+        cursor: pointer;
+        width: 7.75dvw;
+        height: 3.5dvh;
+        border: none;
+    }
+
+    #ftext{
+        font-family: rbr;
+        font-size: 1.5dvw;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+
+    #savepass{
+        display: flex;
+        width: 25dvw;
+        height: 5dvh;
+        margin-top: 4dvh;
+        margin-left: 2dvw;
+        justify-content: space-between;
+    }
+
+    #savebtn{
+        border-radius: 0;
+        width: 11dvw;
+        font-family: rbr;
+        background-color: transparent;
+        border: solid white 0.25dvh; 
+    }
+
+    #savebtn:focus-within{
+        background-color: #161616;
+    }
+
+    #savebtn:hover{
+        background-color: #161616;
+    }
+
+    #backbtn{
+        width: 11dvw;
+        font-family: rbr;
+        background-color: #076aad;
+        border-radius: 0%;
+
+    }
+
+    #backbtn:focus-within{
+        background-color: #3782b4;
+    }
+
+    #backbtn:hover{
+        background-color: #3782b4;
+    }
+
+    #vaultsec{
+        position: absolute;
+        top: 17.5dvh;
+        left: 17.5dvw;
+        background-color: rgb(39, 39, 39);
+        height: 65dvh;
+        width: 65dvw;
+        border-radius: 1dvw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+    #loadersec{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 59dvw;
+        height: 10dvh;
+        background-color: transparent;
+
+    }
+
+    #vaultline{
+        margin-right: 2dvw;
+        margin-top: 1dvh;
+    }
+
+    #inputfile{
+        display:none;
+    }
+
+    .button{
+        background-color: #3498db;
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 8dvw;
+        font-family: rbr;
+    }
+
+    #inputfilebtn{
+        width: 7.75dvw;
+        height: 3.5dvh;
+        background-color: white;
+        color: black;
+        border-radius: 4px;
+
+    }
+
+    #inputfilebtn:hover{
+        background-color: #e2e2e2;
+    }
+
+    #pindiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 30dvw;
+        height: 10dvh;
+    }
+
+    #pinlab{
+        font-family: rbr;
+        font-size: 2dvh;
+        font-weight: 400;
+        color: white;
+        margin-right: 2dvh;
+        text-wrap: nowrap;
+    }
+
+    #pininp{
+        outline: none;
+        font-family: rbr;
+        font-size: 1.25dvw;
+        font-weight: 250;
+        width: 40dvw;
+        background-color: white;
+        color: black;
+        padding-left: 1dvw;
+        padding-right: 1dvw;
+        margin-left: 0.5dvw;
+        border: solid white;
+    }
+
+    #decipher:hover{
+        background-color: #e2e2e2;
+    }
+
+    #decipher{
+        font-family: rbr;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        cursor: pointer;
+        width: 7.75dvw;
+        height: 3.5dvh;
+        border: none;
+        border-radius: 4px;
+        
+    }
+
+    #tablesec{
+        width: 56dvw;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f9fd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 4dvh;
+        height: 37dvh;
+        font-family: rbr;
+        max-height: 40dvh;
+        overflow-x: hidden;
+        overflow-y: scroll ;
+        box-shadow: 0px 10px 50px rgba(40, 40, 40, 0.711);
+        padding-top: 2px;
+    }
+
+    #tablesec h2 {
+        color: #3498db;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        margin-top: 10px;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    th {
+        background-color: #e1f0fe;
+        color: #2980b9;
+    }
+
+    tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:last-child {
+        border-bottom: none;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f5fbff;
+    }
+
+    tr:hover {
+        background-color: #e6f7ff;
+    }
+
+    button {
+        background-color: #3498db;
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 0%;
+        cursor: pointer;
+        width: 8.5dvw;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    .copy-button{
+        background-color: #27a0ae;
+        border-radius: 0%;
+    }
+
+    .copy-button:hover {
+        background-color: #1b8d9a;
+    }
+
+    #backtocipher{
+        width: 15dvw;
+        font-family: rbr;
+        background-color: #076aad;
+        height: 5dvh;
+        margin-top: 2.5dvh;
+        margin-right: 44dvw;
+        border-radius: 0%;
+    }
+
+    #backtocipher:hover{
+        background-color: #3782b4;
+    }
+
+}
+
+@media only screen and (min-height: 1441px){
+
+    #incompatible{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+    }
+
+    #incompatible h4{
+        font-family: rbr;
+        font-size: 3.5dvw;
+        font-weight: 400;
+        color: white;
+    }
+
+    #main{
+        display: none;
+    }
+
+    body{
+        overflow: hidden;
+        height: 100dvh;
+        width: 100dvw;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        user-select: none;
+    }
+
+}
