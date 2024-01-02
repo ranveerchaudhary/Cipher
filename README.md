@@ -84,7 +84,7 @@ Cipher arose as a response to these challenges, initially crafted in Python with
 
 ###
 
-Version 2 marked a significant evolution, introducing password analysis through a set of conditional statements and a vault, fortified with SHA-256<a href = "https://en.wikipedia.org/wiki/Secure_Hash_Algorithms"><sup>1</sup></a> bit hash and HMAC<a href = "https://en.wikipedia.org/wiki/HMAC"><sup>2</sup></a>. Notably, salting was added to enhance security. Subsequent versions led to the current Version 7, the pinnacle of Cipher, offering the most refined and secure features to date.
+Version 2 marked a significant evolution, introducing password analysis through a set of conditional statements and a vault, fortified with SHA-256 bit hash<a href = "https://en.wikipedia.org/wiki/Secure_Hash_Algorithms"><sup>1</sup></a> and HMAC<a href = "https://en.wikipedia.org/wiki/HMAC"><sup>2</sup></a>. Notably, salting was added to enhance security. Subsequent versions led to the current Version 7, the pinnacle of Cipher, offering the most refined and secure features to date.
 
 </p>
 
