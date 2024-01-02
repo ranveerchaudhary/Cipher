@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no maximum-scale=1">
+    <link href = "{{url_for('static', filename = 'style.css')}}" rel = "stylesheet">
+    <link href = "{{url_for('static', filename = 'Puppertino-master/dist/css/newfull.css')}}" rel = "stylesheet">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <title>Cipher</title>
+</head>
+<body>
+
+    <div id = "app">
+        <div id = "main">
+            <img id = "bgimage" src = "static/assets/grad.png">
+            <div id = "nav">
+                <div id = "navdiv">
+                    <h2 id = "cipher">cipher</h2>
+                    <h2><a id = "info" target = "_blank" href = "https://github.com/ranveerchaudhary/Cipher">Info</a></h2>
+                    <h2><a id = "contact" target = "_blank" href = "https://ranveerchaudhary.github.io/">Contact</a></h2>
+                </div>
+            </div>
+            <div id = "base">
+                <div id = "basediv">
+                    <div id = "sec1">
+                        <input class = "p-form-range" id = "lengthbar" type = "range" min = "8" max = "100" value = "20">
+                        <div id = "label">
+                            <h4 id = "length">20</h4>
+                        </div>
+                    </div>
+                    <div id = "sec2">
+                        <div id = "passgen">
+                            <div id = "copybar">
+                                <img id = "copy" src = "static/assets/copy.png">
+                            </div>
+                            <div id = "passbar">
+                                <p id = "password">
+                                    To Get Started With <strong>cipher</strong>, Select The <q>Alphanumeric</q> Option Either On Its Own Or In Combination With The <q>Special Characters</q> Option. 
+                                    Choose The Desired Password Length And Click On <q>Generate</q>.
+                                </p>
+                            </div>
+                            <div id = "strengthbar">
+                                <h3 id = "strength">Strong</h3>
+                            </div>
+                        </div>
+                        <div id = "controlsdiv">
+                            <div id = "csec1">
+                                <div id = "alpha">
+                                    <h4 class = "opl" id = "oal">Alphanumeric</h4>
+                                    <div id = "ln1" class = "linea"></div>
+                                </div>
+                                <div id = "schar">
+                                    <h4 class = "opl" id = "osc">Special Character</h4>
+                                    <div id = "ln2" class = "linea"></div>
+                                </div>
+                                <div id = "read">
+                                    <h4 class = "opl" id = "ord">Readable</h4>
+                                    <div id = "ln3" class = "linea"></div>
+                                </div>
+                            </div>
+                            <div id = "csec2">
+                                <div id = "gendiv">
+                                    <div id = "loader1"></div>
+                                    <input id = "generate" type = "button" value = "Generate">
+                                </div>
+                                <div id = "subcont">
+                                    <input id = "save" type = "button" value = "Save">
+                                    <input id = "vault" type = "button" value = "Vault">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id = "savesec">
+                <div id = "save1">
+
+                    <p id = "savehead">Save Password</p>
+                    <div class = "ln1"></div>
+
+                    <div id = "platform">
+                        <p id = "plat1">Platform</p>
+                        <input id = "plat2" placeholder = "Eg. Instagram, https://website.com/login">
+                    </div>
+
+                    <div id = "passit">
+                        <p id = "pass1">Password</p>
+                        <input id = "pass2" placeholder = "">
+                    </div>
+
+                    <div class = "ln1"></div>
+
+                    <div id = "pin">
+                        <p id = "pin1">Master Pin</p>
+                        <input id = "pin2" placeholder = "">
+                        <p id = "pin3">Caution - Remember/Write This Pin In Order To View The Password Again.</p>
+                    </div>
+                    <div id = "file">
+                        <input type="file" id = "file1">
+                        <input class = "button" id = "pfile" type="button" value="Select File" onclick="document.getElementById('file1').click();" />
+                        <p id = "ftext">Or</p>
+                        <input class = "button" id = "file2" type = "button" value = "Generate New">
+                    </div>
+
+                    <div id = "savepass">
+                        <input class = "button" id = "savebtn" type = "button" value = "Save Password">
+                        <input class = "button" id = "backbtn" type = "button" value = "Back">
+                    </div>
+
+                    <div id = "saveit"></div>                    
+                </div>
+            </div>
+            <div id = "vaultsec">
+                <div id = "loadersec">
+                    <input type="file" id = "inputfile" accept = ".cipher"/>
+                    <input class = "button" id = "inputfilebtn" type="button" value="Select File" onclick="document.getElementById('inputfile').click();" />
+                    <div id = "pindiv">
+                        <h4 id = "pinlab" >Master Pin</h4>
+                        <input id = "pininp" name = "masterpin">
+
+                    </div>
+
+                    <input class = "button" id = "decipher" type = "button" value = "Decipher">
+                </div>
+
+                <div class = "ln1" id = "vaultline"></div>
+
+                <div id = "tablesec">
+                    <h2>Password Vault</h2>
+                    <div class = "scrollable-table">
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Platform</th>
+                                <th>Password</th>
+                                <th>Copy Password</th>
+                              </tr>
+                            </thead>
+                            <tbody id = "tablebody">                             
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+
+                <button class = "button" id = "backtocipher">Back</button>
+            </div>
+        </div>
+        <div id = "incompatible">
+            <h4>This device is currently not compatible.</h4>
+        </div>
+    </div>
+    
+</body>
+<script src = "{{url_for('static', filename = 'dynamics.js')}}"></script>
+</html>
