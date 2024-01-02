@@ -127,7 +127,7 @@ Version 7 represents a substantial leap forward, surpassing its predecessors not
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 
 <p>
-Choosing the right random number generator is vital, as seen in cases like the alleged NSA backdoored <a href = "https://en.wikipedia.org/wiki/Dual_EC_DRBG">dual elliptic curve</a>. Initial the <a href = "https://docs.python.org/3/library/random.html">random</a> library's Pseudo Random Number Generator (PRNG) was used, which worked on the Mersenne Twister algorithm. However, it's crucial to highlight that theoretically, the seemingly random numbers it generates can be predicted, posing a substantial security risk. Even the official documentation advises against using such methods in cryptography and secure applications.
+Choosing the right random number generator is vital, as seen in cases like the alleged NSA backdoored <a href = "https://en.wikipedia.org/wiki/Dual_EC_DRBG">dual elliptic curve</a>. Initially the <a href = "https://docs.python.org/3/library/random.html">random</a> library's Pseudo Random Number Generator (PRNG) was used, which worked on the Mersenne Twister algorithm. However, it's crucial to highlight that theoretically, the seemingly random numbers it generates can be predicted, posing a substantial security risk. Even the official documentation advises against using such methods in cryptography and secure applications.
 
 >Warning The pseudo-random generators of this module should not be used for security purposes. For security or cryptographic uses, see the secrets module.
 
