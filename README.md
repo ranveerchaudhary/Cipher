@@ -7,7 +7,7 @@
 
 <divC>
   <br>
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=210&text=Cipher&fontSize=160&color=0:240e68,100:ccc1e7&stroke=ffffff&fontColor=ffffff"/>
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=210&text=Cipher&fontSize=160&color=0:240e68,100:ccc1e7&stroke=000000&fontColor=ffffff"/>
 </div>
 
 <h3 align = "center" >Revolutionizing Password Security with Quantum Mechanics</h3>
