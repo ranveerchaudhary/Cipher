@@ -79,11 +79,13 @@ The widespread reliance on weak passwords, often a combination of easily guessab
   <li>1 out of 5 individuals admit including their birth year in their password. (<a href = "https://www.security.org/resources/online-password-strategies/">security.org</a>, 2023)</li>
   <li>96% of the most common passwords can be cracked by hacking tools in less than one second. (<a href = "https://resources.digitalshadows.com/whitepapers-and-reports/account-takeover-in-2022">Digital Shadows</a>, 2022)</li>
 </ul>
-In response to these challenges, Cipher emerged as a solution. The initial iteration, developed exclusively in Python, featured a user interface implemented using the Tkinter library. Despite the UI exuding a nostalgic Windows 95 aesthetic, Cipher defied Tkinter's constraints, achieving a modern appearance with the added flair of a dark mode ;). The password generation mechanism relied on the random library, a Pseudo Random Number Generator (PRNG), offering a level of security that, although less robust than today's standards, was acceptably secure.
+
+Cipher arose as a response to these challenges, initially crafted in Python with a Tkinter-based user interface that blended nostalgia with a modern touch, including a sleek dark mode :) The password generation relied on the random library, a Pseudo Random Number Generator (PRNG), providing a secure solution, though not as robust as current standards. 
 
 ###
 
-Version 2 marked a significant evolution, introducing password analysis capabilities through a set of conditional statements. The vault, a new addition in this version, leveraged the hashlib library to implement the SHA-256 bit hash (Secure Hashing Algorithm) [<sup>1</sup>](https://en.wikipedia.org/wiki/Secure_Hash_Algorithms) and HMAC [<sup>2</sup>](https://en.wikipedia.org/wiki/HMAC). Notably, salting was implemented to fortify the system against password-hash dictionaries. Subsequent versions featured minor updates, culminating in the current Version 7, which represents the pinnacle of Cipher's capabilities, offering the most refined and secure features to date.
+Version 2 marked a significant evolution, introducing password analysis through a set of conditional statements and a vault, fortified with SHA-256<a href = "https://en.wikipedia.org/wiki/Secure_Hash_Algorithms"><sup>1</sup></a> bit hash and HMAC<a href = "https://en.wikipedia.org/wiki/HMAC"><sup>2</sup></a>. Notably, salting was added to enhance security. Subsequent versions led to the current Version 7, the pinnacle of Cipher, offering the most refined and secure features to date.
+
 </p>
 
 <div align = "center" style = "display:flex; flex-direction:row;">
@@ -125,23 +127,15 @@ Version 7 represents a substantial leap forward, surpassing its predecessors not
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 
 <p>
-The initial versions of Cipher relied on the <a href = "https://docs.python.org/3/library/random.html">random</a> library, which utilizes a Pseudo Random Number Generator (PRNG), specifically employing the Mersenne Twister algorithm. However, it's crucial to highlight that theoretically, the seemingly random numbers it generates can be predicted, posing a substantial security flaw, particularly in the realm of cybersecurity. Even the official documentation explicitly advises against using such methods in cryptography and other secure applications. 
+Choosing the right random number generator is vital, as seen in cases like the alleged NSA backdoored <a href = "https://en.wikipedia.org/wiki/Dual_EC_DRBG">dual elliptic curve</a>. Initial the <a href = "https://docs.python.org/3/library/random.html">random</a> library's Pseudo Random Number Generator (PRNG) was used, which worked on the Mersenne Twister algorithm. However, it's crucial to highlight that theoretically, the seemingly random numbers it generates can be predicted, posing a substantial security risk. Even the official documentation advises against using such methods in cryptography and secure applications.
 
 >Warning The pseudo-random generators of this module should not be used for security purposes. For security or cryptographic uses, see the secrets module.
 
-While an alternative like the '<a href = "https://docs.python.org/3/library/secrets.html">secrets</a>' module, a Cryptographically Secure Random Number Generator (CSRNG), exists, we have embraced an even more advanced solution. Fortunately, the brilliant minds at the Australian National University (ANU) leverage quantum mechanics to measure the quantum fluctuations of the vacuum, resulting in a <a href = "https://qrng.anu.edu.au/">QRNG</a> (Quantum Random Number Generation), accessible through an API.
-
-The intricacies of how QRNG operates are beyond the scope of this project, but in essence, it introduces an unparalleled level of randomness and security. Just to give some context about its potency,
+While an alternative like the '<a href = "https://docs.python.org/3/library/secrets.html">secrets</a>' module, a Cryptographically Secure Random Number Generator (CSRNG), exists, we have embraced an even more advanced solution. Fortunately, the brilliant minds at the Australian National University (ANU) leverage quantum mechanics to measure the quantum fluctuations of the vacuum, resulting in a <a href = "https://qrng.anu.edu.au/">QRNG</a> (Quantum Random Number Generation), accessible through an API. The intricacies of how QRNG operates are beyond the scope of this project, but in essence, it introduces an unparalleled level of randomness and security. Just to give some context about its potency,
 
 >Even if two identical generators were placed in identical environments with identical initial conditions, the streams of numbers generated would remain entirely uncorrelated.
 
-Cipher harnesses this cutting-edge technology to generate truly random and robust passwords. While the API offers a free tier, it is restricted to 100 requests per month, as per our last check. You can sign up for the API and get the secret key <a href = "https://quantumnumbers.anu.edu.au/">here</a>. Users has the flexibility to choose the type of password they desire. The options include **alphanumeric**, **special characters**, and **r̶e̶a̶d̶a̶b̶l̶e̶**.
-
-The alphanumeric option keeps things simple by including only numbers and alphabets. Passwords can be strengthened by incorporating special characters, which only works in conjunction with the alphanumeric-only option, adding special characters to the mix.
-
-There **was** also a third option called readable, which initially generated easily understandable passwords. However, after rigorous testing revealed a pattern of producing weak passwords, we disabled this option in the latest build.
-
-Users can select the password length using the slider, ranging from 8 to 100 characters. Even though a length of around 30 characters would be considered highly secure we've generously added extra space for the cybersecurity enthusiasts. The generation mechanics handle all the heavy lifting, ensuring the creation of resilient passwords that defy predictability.
+While the API offers a free tier, it is restricted to 100 requests per month, as per our last check. You can sign up for the API and get the secret key <a href = "https://quantumnumbers.anu.edu.au/">here</a>. Users has the flexibility to choose the type of password they desire. The options include **alphanumeric**, **special characters**, and **r̶e̶a̶d̶a̶b̶l̶e̶**. The "readable" option was introduced for easily understandable passwords, but rigorous testing revealed a pattern of weakness. Consequently, this option has been **disabled** in the latest build. Passwords ranging from 8 to 100 characters can be generated. Even though a length of around 30 characters would be considered highly secure we've generously added extra space for the cybersecurity enthusiasts ;)
 </p>
 
 https://github.com/ranveerchaudhary/Cipher/assets/64607338/7b5decc3-0e86-46cb-99e5-04bb2f3ac6ab
@@ -154,15 +148,15 @@ https://github.com/ranveerchaudhary/Cipher/assets/64607338/7b5decc3-0e86-46cb-99
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
-<p>The capabilities of neural networks have been harnessed to analyze password strength within Cipher. While earlier versions included this feature, they relied on simple if-else statements to categorize passwords based on their strength. Although seemingly functional, this approach can, in many cases, misrepresent password strength, introducing a potential security flaw.
+<p>Why use neural networks instead of simple conditional statements in categorizing password strength? The latter can misrepresent it, leading to potential security flaws. For instance, while "abcd12345" seems weak for conditional statements, "Abcd@1234" is strong. Cipher utilizes neural networks for accurate password strength analysis.
 
-To address this limitation, a neural network has been integrated into Cipher's latest version. The neural network is trained on a custom dataset curated by Ranveer, categorized into three labels: weak, medium, and strong. The dataset encompasses passwords from various sources, including infamous leaked <a href = "https://en.wikipedia.org/wiki/RockYou#Data_breach" >RockYou passwords</a> and other leaked passwords found on the internet, these passwords were then scraped using <a href = "https://www.crummy.com/software/BeautifulSoup/" >BeautifulSoup</a>. Additionally, passwords generated using Cipher and the QRNG were included.
+The neural network was trained on a custom dataset curated by Ranveer, categorized into three labels: weak, medium, and strong. The dataset encompasses passwords from various sources, including infamous leaked <a href = "https://en.wikipedia.org/wiki/RockYou#Data_breach" >RockYou passwords</a> and other leaked passwords found on the internet, these passwords were then scraped using <a href = "https://www.crummy.com/software/BeautifulSoup/" >BeautifulSoup</a>. Additionally, passwords generated using Cipher and the QRNG were included.
 
-Curating the dataset posed a unique challenge during the scraping process, as passwords, when used in the generation process, could contain commas. To mitigate potential issues with CSV (Comma-Separated Values), we transitioned to TSV (Tab-Separated Values) by switching the delimiter. This ensured that passwords with commas were preserved without disrupting the dataset.
+Curating the dataset posed a unique challenge during the scraping process, as passwords could contain commas. To mitigate potential issues with CSV (Comma-Separated Values), we transitioned to TSV (Tab-Separated Values) by switching the delimiter. This ensured that passwords with commas were preserved without disrupting the dataset.
 
 >Even if you don't use a cipher, always include a comma in your password. It will break the CSV format if your password ever gets leaked.
 
-The processed data was then input into a meticulously designed neural network implemented using Keras. The model underwent extensive training over hundreds of epochs, with hyperparameters finely tuned to capture the intricate non-linear patterns associated with password strength. The result? A cutting-edge password analysis system that precisely evaluates the robustness of the generated password, and if Cipher says it's strong, then it's really strong — even by military standards.</p>
+The data was fed into a meticulously designed Keras neural network, trained extensively over hundereds of epochs with finely tuned hyperparameters to capture the intricate non-linear patterns associated with password strength. The result? A cutting-edge password analysis system that precisely evaluates the robustness of generated passwords, and if Cipher says it's strong, then it's really strong — even by military standards.</p>
 
 <div align = "center">
   <img src = "https://github.com/ranveerchaudhary/Cipher/blob/main/readme-assets/weakpasscipher.png">
