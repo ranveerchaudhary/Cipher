@@ -104,7 +104,7 @@ Version 2 marked a significant evolution, introducing password analysis through 
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 <p>
-As previously mentioned, the initial versions of Cipher were constructed atop the Tkinter library, which did not meet modern UI/UX standards. However, the most recent Version 7 has undergone a transformation, adopting the neomorphism design style and harnessing the Puppertino framework to achieve crisp graphics. To introduce fluid and dynamic animations, we've incorporated the Anime.js framework, orchestrating intricate movements that enhance the overall user experience.
+As previously mentioned, the initial versions of Cipher were constructed atop the Tkinter library, which did not meet modern UI/UX standards. However, the most recent Version 7 has undergone a transformation, adopting the neumorphism design style and harnessing the Puppertino framework to achieve crisp graphics. To introduce fluid and dynamic animations, we've incorporated the Anime.js framework, orchestrating intricate movements that enhance the overall user experience.
 
 <ul>
   <li> <a href = "https://github.com/codedgar/Puppertino">Puppertino</a> </li>
