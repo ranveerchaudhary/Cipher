@@ -1,4 +1,4 @@
-const API_KEY = "6lhqWGeUAh3PKdy7Xd9I41pM50YUED133JlRNUiD";  // replace with your secret API-KEY
+const API_KEY = "YOUR_API_KEY";  // replace with your secret API-KEY
 
 //--------------- Only Change Something Below This Line If You Know What You Are Doing ---------------
 
