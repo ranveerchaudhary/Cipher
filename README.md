@@ -211,7 +211,7 @@ Don't forget to give the project a star! Thanks again!
 
 <h2 id = "contact">Reach Out 📬</h2>
 <ul>
-<li>Email: <a href = "mailto:ranveerchaudhary1000+github@gmail.com">ranveerchaudhary1000@gmail.com</a></li>
+<li>Email: <a href = "mailto:ranveerchaudhary1000+github@gmail.com">ranveerchaudhary1000+github@gmail.com</a></li>
 
 <li>Portfolio Website: https://ranveerchaudhary.github.io</li>
 
