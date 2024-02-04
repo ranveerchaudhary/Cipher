@@ -215,5 +215,5 @@ Don't forget to give the project a star! Thanks again!
 
 <li>Portfolio Website: https://ranveerchaudhary.github.io</li>
 
-<li>Linkedin Profile: https://www.linkedin.com/in/ranveerchaudhary1</li>
+<li>Linkedin: https://www.linkedin.com/in/ranveerchaudhary1</li>
 </ul>
