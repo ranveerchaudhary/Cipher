@@ -50,6 +50,9 @@
       <h3><a href = "#endnode">The End Note 🔚</a></h3>
     </li>
     <li>
+      <h3><a href = "#installation">Installation 📥</a></h3>
+    </li>
+    <li>
       <h3><a href = "#contributions">Get Involved :anchor:</a></h3>
     </li>
     <li>
