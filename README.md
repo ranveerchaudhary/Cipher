@@ -183,6 +183,14 @@ If users wish to view the passwords again, they can upload the .cipher file and 
 
 <br>
 
+<h2 id = "installation">Installation 📥</h2>
+
+<p>Cipher requires Python 3.5 or newer</p>
+  
+##
+
+<br>
+
 <h2 id = "endnode">The End Note 🔚</h2>
 
 <p>
