@@ -184,9 +184,20 @@ If users wish to view the passwords again, they can upload the .cipher file and 
 <br>
 
 <h2 id = "installation">Installation 📥</h2>
-
-<p>Cipher requires Python 3.5 or newer</p>
+<ol>
   
+<li>
+  Download & Install <a href = "https://www.python.org/downloads/">Python.</a>
+  <ul><li><i>Cipher requires Python 3.5 or newer.</i></li></ul>
+</li>
+<br>
+<li>
+  Download <a href = "https://github.com/ranveerchaudhary/Cipher/archive/refs/heads/main.zip">Cipher</a> or clone the repository to your system.
+  <ul><li><i>Unzip the file if it was downloaded as a zip. If you cloned the repository, navigate to the directory and proceed.</i></li></ul>
+</li>
+
+</ol>
+
 ##
 
 <br>
