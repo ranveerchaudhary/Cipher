@@ -193,7 +193,7 @@ If users wish to view the passwords again, they can upload the .cipher file and 
 <br>
 <li>
   Download <a href = "https://github.com/ranveerchaudhary/Cipher/archive/refs/heads/main.zip">Cipher</a> or clone the repository to your system.
-  <ul><li><i>Unzip the file if it was downloaded as a zip. If you cloned the repository, navigate to the directory and proceed.</i></li></ul>
+  <ul><li><i>Unzip the file if it was downloaded as a zip. If you cloned the repository, navigate to the directory and proceed (Cipher-main\code).</i></li></ul>
 </li>
 <br>
 <li>
