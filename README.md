@@ -197,9 +197,17 @@ If users wish to view the passwords again, they can upload the .cipher file and 
 </li>
 <br>
 <li>
-  Open a terminal in the Cipher directory and run
+  Open a terminal in the Cipher directory and run.
   <ul>
     <li><code>pip install -r requirements.txt</code></li>
+  </ul>
+</li>
+
+<br>
+<li>
+  Create an account for ANU's QRNG API Key.
+  <ul>
+    <li>https://quantumnumbers.anu.edu.au/</li>
   </ul>
 </li>
 
