@@ -211,6 +211,14 @@ If users wish to view the passwords again, they can upload the .cipher file and 
   </ul>
 </li>
 
+<br>
+<li>
+  Copy the API key to the <i>'dynamic.js file'</i>.
+  <ul>
+    <li>You can replace <i>'YOUR_API_KEY'</i> with your copied API Key with the Quotation marks intact.</li>
+  </ul>
+</li>
+
 </ol>
 
 ##
